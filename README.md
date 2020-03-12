@@ -1,4 +1,4 @@
-# ActiveJDBC example showing Many-To-Many
+# ActiveJDBC example showing Many-To-Many for Gradle
  
  This example shows a typical usage of ActiveJDBC in a Many-to-Many
   relationship where a join table is also used to record some metadata for 
@@ -58,10 +58,5 @@ Model: activejdbc.examples.simple.Movie, table: 'movies', attributes: {id=2, tit
 
 If you run  this example from an IDE, you will need to instrument models before running. Here is how: 
 
-    mvn process-classes
- 
- another way of doing the same is: 
- 
-    mvn activejdbc-instrumentation:instrument
-
+    gradle instrumentModels
 

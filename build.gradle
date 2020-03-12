@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id 'de.schablinski.activejdbc-gradle-plugin' version '1.5.2'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+dependencies {
+    implementation 'org.javalite:activejdbc:2.3.1-j8'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.5.4'
+    implementation 'org.javalite:db-migrator-maven-plugin:2.3.1-j8'
+    implementation 'org.slf4j:slf4j-simple:1.7.9'
+    testImplementation 'junit:junit:4.12'
+}
+
+group = 'org.javalite'
+version = '1.0-SNAPSHOT'
+description = 'ActiveJDBC - Simple Gradle Example'
+sourceCompatibility = '11'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
+}

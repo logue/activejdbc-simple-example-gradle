@@ -1,0 +1,83 @@
+* text=auto eol=lf encoding=UTF-8
+
+HELP.md
+.gradle
+build/
+
+### STS ###
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.project
+.classpath
+.settings
+
+# Idea
+.idea
+*.iml
+*.iws
+*.ipr
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Gradle
+.gradle
+!gradle-wrapper.jar
+
+# Maven
+target
+
+# Build
+out
+build
+bin
+
+# Other
+*.log
+*.swp
+*.bak
+
+# Images
+*.gif binary
+*.ico binary
+*.jpg binary
+*.png binary
+*.svg eol=lf encoding=UTF-8
+*.swf binary
+
+# Other
+*.properties eol=lf
+*.bat text eol=crlf
+
+# Binary Files
+# executable
+*.exe binary
+*.jar binary
